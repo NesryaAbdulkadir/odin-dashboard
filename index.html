@@ -9,41 +9,365 @@
   <body>
     <div class="container">
       <div class="header">
-        <div>
-          <div>
-            <input type="text" />
+        <div class="header-top">
+          <div class="header-input-container">
+            <img src="icons/magnify.svg" alt="search" class="icon-search" />
+            <input type="text" class="header-input" />
           </div>
-          <div>
-            <p>Notification</p>
-            <div>
-              <div></div>
+          <div class="header-right">
+            <img src="icons/bell-ring.svg" alt="bell" class="icons-bell" />
+            <div class="profile-container">
+              <div class="profileImg"></div>
               <p>Nesrya Abdulkadir</p>
             </div>
           </div>
         </div>
-        <div>
-          <div></div>
-          <p>Hi, There</p>
-          <p>Nesrya Abdulkadir(@nesrya)</p>
+        <div class="header-bottom">
+          <div class="profile-container">
+            <div class="profileImg" id="big-profile-image"></div>
+            <div>
+              <p class="greeting">Hi, There</p>
+              <p class="username">Nesrya Abdulkadir(@nesrya)</p>
+            </div>
+          </div>
+          <div class="header-button">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
         </div>
       </div>
       <div class="sidebar">
-        <h1>Dashboard</h1>
+        <h1>
+          <img
+            src="icons/dashboard.svg"
+            alt="dashboard logo"
+            width="50px"
+            class="icons"
+            id="header-logo"
+          />Dashboard
+        </h1>
         <ul class="sidebar-items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Messages</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Tasks</a></li>
-          <li><a href="#">Communities</a></li>
+          <li>
+            <a href="#">
+              <img src="icons/home.svg" alt="home" class="icons" />
+              Home</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="icons/profile.svg"
+                alt="profile"
+                class="icons"
+              />Profile</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="icons/message.svg"
+                alt="message"
+                class="icons"
+              />Messages</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="icons/history.svg"
+                alt="history"
+                class="icons"
+              />History</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="icons/tree.svg" alt="tree" class="icons" />Tasks</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="icons/community.svg"
+                alt="community"
+                class="icons"
+              />Communities</a
+            >
+          </li>
         </ul>
-        <ul>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Privacy</a></li>
+        <ul class="sidebar-items">
+          <li>
+            <a href="#"
+              ><img
+                src="icons/setting.svg"
+                alt="setting"
+                class="icons"
+              />Settings</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="icons/support.svg"
+                alt="support"
+                class="icons"
+              />Support</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="icons/lock.svg"
+                alt="privacy"
+                class="icons"
+              />Privacy</a
+            >
+          </li>
         </ul>
       </div>
-      <div class="main"></div>
+      <div class="main">
+        <div class="projects">
+          <h1>Your Projects</h1>
+          <div class="projects-container">
+            <div class="project">
+              <h2>Super Cool Project</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci repellat officiis pariatur vitae corrupti, iure vero
+                similique ab architecto saepe consectetur doloremque facere ex
+                deleniti at dolore delectus voluptates tenetur.
+              </p>
+              <div class="project-buttons">
+                <button>
+                  <img
+                    src="icons/eye-plus.svg"
+                    alt="eye"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/star-plus.svg"
+                    alt="star"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/source-fork.svg"
+                    alt="fork"
+                    class="project-icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <h2>Less Cool Project</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci repellat officiis pariatur vitae corrupti, iure vero
+                similique ab architecto saepe consectetur doloremque facere ex
+                deleniti at dolore delectus voluptates tenetur.
+              </p>
+              <div class="project-buttons">
+                <button>
+                  <img
+                    src="icons/eye-plus.svg"
+                    alt="eye"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/star-plus.svg"
+                    alt="star"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/source-fork.svg"
+                    alt="fork"
+                    class="project-icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <h2>Impossible App</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci repellat officiis pariatur vitae corrupti, iure vero
+                similique ab architecto saepe consectetur doloremque facere ex
+                deleniti at dolore delectus voluptates tenetur.
+              </p>
+              <div class="project-buttons">
+                <button>
+                  <img
+                    src="icons/eye-plus.svg"
+                    alt="eye"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/star-plus.svg"
+                    alt="star"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/source-fork.svg"
+                    alt="fork"
+                    class="project-icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <h2>Easy Peasy App</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci repellat officiis pariatur vitae corrupti, iure vero
+                similique ab architecto saepe consectetur doloremque facere ex
+                deleniti at dolore delectus voluptates tenetur.
+              </p>
+              <div class="project-buttons">
+                <button>
+                  <img
+                    src="icons/eye-plus.svg"
+                    alt="eye"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/star-plus.svg"
+                    alt="star"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/source-fork.svg"
+                    alt="fork"
+                    class="project-icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <h2>Ad Blocker</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci repellat officiis pariatur vitae corrupti, iure vero
+                similique ab architecto saepe consectetur doloremque facere ex
+                deleniti at dolore delectus voluptates tenetur.
+              </p>
+              <div class="project-buttons">
+                <button>
+                  <img
+                    src="icons/eye-plus.svg"
+                    alt="eye"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/star-plus.svg"
+                    alt="star"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/source-fork.svg"
+                    alt="fork"
+                    class="project-icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <h2>Money Maker</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci repellat officiis pariatur vitae corrupti, iure vero
+                similique ab architecto saepe consectetur doloremque facere ex
+                deleniti at dolore delectus voluptates tenetur.
+              </p>
+              <div class="project-buttons">
+                <button>
+                  <img
+                    src="icons/eye-plus.svg"
+                    alt="eye"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/star-plus.svg"
+                    alt="star"
+                    class="project-icon"
+                  />
+                </button>
+                <button>
+                  <img
+                    src="icons/source-fork.svg"
+                    alt="fork"
+                    class="project-icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="announcemnets">
+            <h1>Announcemnets</h1>
+            <div class="announcemnet">
+              <h2>Site Maintainance</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                quaerat. Alias omnis voluptatibus culpa, voluptate laborum.
+              </p>
+              <hr />
+              <h2>Community Share Day</h2>
+              <p>
+                Nihil quod? Praesentium iste eius necessitatibus illo expedita
+                fuga unde, voluptate tempora inventore tenetur quas. Delectus!
+              </p>
+              <hr />
+              <h2>Updated Privacy Policy</h2>
+              <p>
+                Dolor sit amet consectetur adipisicing elit. recusandae qui
+                obcaecati assumenda veniam sequi magnam nisi sed cumque quia.
+              </p>
+            </div>
+          </div>
+          <div class="trending">
+            <h2>Trending</h2>
+            <div class="trending-container">
+              <div class="profile-container">
+                <div class="profileImg" id="big-profile-image"></div>
+                <div>
+                  <p class="username">@nesrya</p>
+                  <p>Nesrya Abdulkadir</p>
+                </div>
+              </div>
+              <div class="profile-container">
+                <div class="profileImg" id="big-profile-image"></div>
+                <div>
+                  <p class="username">@nesrya</p>
+                  <p>Nesrya Abdulkadir</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

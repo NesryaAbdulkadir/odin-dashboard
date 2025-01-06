@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-y: hidden;
+}
 .container {
   width: 100%;
   height: 100vh;
@@ -16,9 +21,12 @@
     "sidebar main main main"
     "sidebar main main main";
 }
-
 .header {
   grid-area: header;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-around;
   height: 100%;
   width: 100%;
   padding: 30px;
@@ -30,14 +38,187 @@
   height: 100%;
   width: 100%;
   padding: 30px;
-  background-color: #2f6dff;
+  background-color: #427bff;
   color: white;
 }
-
+.sidebar h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .main {
   grid-area: main;
   height: 100%;
   width: 100%;
   padding: 30px;
   background-color: #dfe9ff;
+  overflow-y: auto;
+}
+.sidebar-items li {
+  list-style: none;
+  margin: 10px 0;
+}
+.sidebar-items li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.icons {
+  width: 30px;
+  filter: invert();
+}
+#header-logo {
+  width: 50px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-right {
+  display: flex;
+  gap: 20px;
+}
+.icons-bell {
+  width: 30px;
+}
+.profileImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #427bff;
+  border: 2px solid white;
+  box-shadow: 2px 0 5px #0000005f;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icon-search {
+  width: 30px;
+}
+.header-input-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header-input {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #dfe9ff;
+  padding: 5px;
+  min-width: 500px;
+  font-size: 18px;
+}
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  font-size: 18px;
+}
+#big-profile-image {
+  width: 50px;
+  height: 50px;
+}
+.greeting {
+  font-size: 16px;
+  font-weight: 500;
+}
+.username {
+  font-size: 20px;
+  font-weight: 600;
+}
+.header-button {
+  display: flex;
+  gap: 20px;
+}
+.header-button button {
+  background-color: #427bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.project-icon {
+  width: 25px;
+}
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+.project-buttons button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.projects h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 10px solid #ffc642;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto 300px;
+  gap: 20px;
+}
+.projects-container {
+  /* grid-area: project; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.announcemnet {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.announcemnets h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.announcemnet p {
+  font-size: 16px;
+  color: rgb(113, 113, 113);
+  line-height: 1.2;
+  padding: 10px 0;
+  padding-bottom: 15px;
+}
+hr {
+  border: 1px solid rgb(142, 142, 142);
+  margin: 10px 0;
+}
+.trending h2 {
+  margin: 10px 0;
+}
+.trending-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
